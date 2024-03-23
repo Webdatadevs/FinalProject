@@ -5,7 +5,7 @@ import { setCategories } from "../slice/Categories.Slice";
 export default async function getProducts(dispatch) {
     dispatch(isLoadingProduct());
     await axios
-        .get("http://localhost:3000/products")
+        .get("https://datab-quej.onrender.com/products")
         .then((data) => {
             dispatch(setProducts(data.data));
             console.log(data.data);
