@@ -52,7 +52,7 @@ const Basket = () => {
                               </button>
                               <Box display={'flex'} alignItems={'center'} gap={'5px'} background={'#F0F0F0'} borderRadius={'10px'}>
                                   <IconButton  icon={<AiFillPlusCircle />} onClick={() => dispatch(incrementQuantity(element.id))}/>
-                                  <Text>{element.quantyti}</Text>
+                                  <Text>{parseInt(element.quantyti)}</Text>
                                   <IconButton isDisabled={element.quantyti === 1 ? true : false} icon={<AiFillMinusCircle />} onClick={() => dispatch(decrementQuantity(element.id))}/>
                               </Box>
                           </Box>
