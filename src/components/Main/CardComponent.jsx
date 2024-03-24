@@ -56,7 +56,9 @@ const CardComponent = ({ element }) => {
                         <Card
                             boxShadow={"5px 5px 9px #F0EEED"}
                             border={"1px solid #F0EEED"}
+
                         >
+
                             <CardHeader>
                                 <Box
                                     display={"inline-flex"}
@@ -104,17 +106,17 @@ const CardComponent = ({ element }) => {
                                     </Text>
                                 </Box>
                             </CardHeader>
+
                             <CardBody>
+                            <NavLink 
+                                to={`/about/${element.id}`}>
                                 <Text>{element.title}</Text>
+                            </NavLink>
                             </CardBody>
                             <CardFooter
                                 display={"flex"}
                                 flexDirection={"column"}
                             >
-                                <NavLink 
-                                     to={`/about/${element.id}`}>
-                                    <Text textColor={'dodgerblue'} display={'inline'}>more...</Text>
-                                </NavLink>
                                 <Text textColor={"#000000"} marginTop={'15px'} fontSize={"24px"}>
 
                                     {element.price} so'm

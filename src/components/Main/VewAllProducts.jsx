@@ -38,7 +38,7 @@ const VewAllProducts = () => {
                         dispatch(setSelectCategories(products))
                     }}
                 >
-                    Vew All goods
+                    vew all goods
                 </Button>
                 <Heading
                     display={click ? "block" : "none"}

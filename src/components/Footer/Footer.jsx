@@ -65,8 +65,8 @@ const Footer = () => {
                             </Text>
                             {navigationLinks.map((item) => (
                                 <>
-                                    <Box marginTop={"10px"}>
-                                        <NavLink key={item.id} to={item.url}>
+                                    <Box key={item.id} marginTop={"10px"}>
+                                        <NavLink to={item.url}>
                                             {item.title}
                                         </NavLink>
                                     </Box>
@@ -83,8 +83,8 @@ const Footer = () => {
                             </Text>
                             {customerSupportLinks.map((item) => (
                                 <>
-                                    <Box marginTop={"10px"}>
-                                        <NavLink key={item.id} to={item.url}>
+                                    <Box key={item.id} marginTop={"10px"}>
+                                        <NavLink to={item.url}>
                                             {item.title}
                                         </NavLink>
                                     </Box>
@@ -101,8 +101,8 @@ const Footer = () => {
                             </Text>
                             {accountLinks.map((item) => (
                                 <>
-                                    <Box marginTop={"10px"}>
-                                        <NavLink key={item.id} to={item.url}>
+                                    <Box key={item.id} marginTop={"10px"}>
+                                        <NavLink to={item.url}>
                                             {item.title}
                                         </NavLink>
                                     </Box>
@@ -119,8 +119,8 @@ const Footer = () => {
                             </Text>
                             {freeContentLinks.map((item) => (
                                 <>
-                                    <Box marginTop={"10px"}>
-                                        <NavLink key={item.id} to={item.url}>
+                                    <Box key={item.id} marginTop={"10px"}>
+                                        <NavLink to={item.url}>
                                             {item.title}
                                         </NavLink>
                                     </Box>
