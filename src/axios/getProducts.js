@@ -8,7 +8,7 @@ export default async function getProducts(dispatch) {
         .get("https://datab-3.onrender.com/products")
         .then((data) => {
             dispatch(setProducts(data.data));
-            console.log(data.data);
+            // console.log(data.data);
         })
         .catch((err) => console.log(err));
 }
