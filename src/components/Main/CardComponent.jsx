@@ -17,6 +17,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setBasket, setLike, setSave, setSelectProducts } from "../../slice/Product.Slice";
 import { AiOutlineHeart } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import sceletonFaceData from "./sceletonData";
 
 const CardComponent = ({ element }) => {
     const { products, isLike, save, basket, isLoading } = useSelector(
@@ -29,15 +30,26 @@ const CardComponent = ({ element }) => {
     );
     const dispatch = useDispatch();
 
+    
 
     return (
         <>
-            {isLoading ? (
+            {isLoading && (!products) ? (
+                <Box
+                display={"grid"}
+                width={"100%"}
+                gridTemplateColumns={"repeat(auto-fit, minmax(200px, 1fr))"}
+                gap={"10px"}
+                marginTop={"20px"}
+            >
                 <Stack>
-                    <Skeleton height="20px" />
-                    <Skeleton height="20px" />
-                    <Skeleton height="20px" />
+                    {
+                        sceletonFaceData.map((item, index )=> (
+                                <Skeleton key={item} height="20px" />
+                        ))
+                    }
                 </Stack>
+                </Box>
             ) : (
                 <>
                     <Box display={"inline-flex"} key={element.id}>

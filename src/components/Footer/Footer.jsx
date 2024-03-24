@@ -15,7 +15,7 @@ import { Box, Heading, Icon, Text } from "@chakra-ui/react";
 const Footer = () => {
     return (
         <>
-            <Box width={"100%"} background={"#F0F0F0"} paddingY={"50px"}>
+            <Box width={"100%"} background={"#F0F0F0"} paddingY={"50px"} marginTop={'30px'}>
                 <Box width={"90%"} marginX={"auto"} >
                     <Box
                         width={"100%"}
