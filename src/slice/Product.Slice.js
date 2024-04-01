@@ -68,7 +68,7 @@ export const productSlice = createSlice({
             if(state.totalPrice===0){
                 return;
             }else{
-                state.totalPrice -= data.price
+                state.totalPrice -= Math.round(data.price)
             }
         },
         setSelectProducts(state, action){
