@@ -35,7 +35,7 @@ const About = () => {
                 selectProducts ? 
                 <>
                         <Box>
-                            <Img src={selectProducts.image} width={"100%"} />
+                            <Img src={selectProducts?.image} width={"100%"} />
                         </Box>
 
                         <Box
@@ -46,11 +46,11 @@ const About = () => {
                         >
                             <Box>
                                 <Heading fontSize={"30px"}>
-                                    {selectProducts.title}
+                                    {selectProducts?.title}
                                 </Heading>
-                                <Text fontSize={"34px"} marginTop={'30px'}>{selectProducts.price} so'm</Text>
+                                <Text fontSize={"34px"} marginTop={'30px'}>{selectProducts?.price} so'm</Text>
                                 <Text textColor={"#00000099"} marginTop={'20px'}>
-                                    {selectProducts.description}
+                                    {selectProducts?.description}
                                 </Text>
                             </Box>
 
