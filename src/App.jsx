@@ -14,6 +14,7 @@ const App = () => {
         <>
             <Box background={'#fff'} position={'sticky'} top={'0'} zIndex={'999999'}>
                 <Header />
+                <div id='frame' style='width:728px;'><iframe data-aa='2333550' src='//ad.a-ads.com/2333550?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe><a style='display: block; text-align: right; font-size: 12px' id='preview-link' href='https://a-ads.com/?partner=2333550'>Advertise here</a></div>
             </Box>
 
             <Routes>
