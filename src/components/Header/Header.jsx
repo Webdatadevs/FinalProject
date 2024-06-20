@@ -59,6 +59,7 @@ const Header = () => {
                     <IconButton icon={<AiOutlineHeart />} />
                 </NavLink>
             </Box>
+            <a href="https://surfe.be/ext/2895085" target="_blank"><img src="https://static.surfe.be/images/banners/ru/468x60_11.gif" alt="Surfe.be - Сервис размещения рекламы" /></a>
         </Box>
     );
 };
